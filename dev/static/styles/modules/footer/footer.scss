@@ -1,0 +1,395 @@
+footer {
+    flex: 0 0 auto;
+}
+
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-company {
+    width: 16.666%;
+}
+
+.footer-company img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-company p {
+    margin-bottom: 10px;
+    line-height: 125%;
+    font-size: 14px;
+}
+
+a.politic-footer {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.footer-menu {
+    width: 24.999%;
+}
+
+
+.footer-catalog {
+    width: 24.999%;
+}
+
+.footer-menu h3, .footer-catalog h3 {
+    margin: 0;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+ul.menu-bottom li {
+    margin-bottom: 20px;
+}
+
+ul.menu-bottom li a {
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s;
+}
+
+ul.menu-bottom li a:hover {
+    color: $green;
+}
+
+.footer-contacts {
+    width: 33.333%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__list__footer {
+    width: 50%;
+    height: 20%;
+}
+
+.contact__item__footer {
+    margin-bottom: 20px;
+}
+
+.contact__item__footer p {
+    font-size: 16px;
+}
+
+.contact__item__footer a {
+    font-size: 16px;
+    transition: .3s;
+}
+
+.contact__item__footer a:hover {
+    color: $green;
+}
+
+.callback-footer span {
+    cursor: pointer;
+}
+
+.seacrh-footer {
+    width: 80%;
+}
+
+.developed {
+    position: absolute;
+    right: 1%;
+    bottom: 10%;
+}
+
+.developed p {
+    font-size: 12px;
+}
+
+.developed a {
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid $green-btn;
+}
+
+/* button top */
+.top {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 9;
+    font-size: 0;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: $green;
+    transition: background-color 0.3s linear;
+}
+  
+.top:hover {
+    background-color: #395931;
+}
+  
+.top::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background: url(/static/images/general/top.svg) no-repeat;
+    background-size: 100%;
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .footer-menu {
+        padding-left: 5%;
+    }
+
+    .contact__item__footer p {
+        font-size: 14px;
+    }
+
+    .contact__item__footer a {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .footer-company img {
+        width: 90px;
+    }
+
+    .footer-company p {
+        font-size: 12px;
+    }
+
+    .footer-menu {
+        padding-left: 0;
+        width: 16.666%;
+    }
+
+    ul.menu-bottom li a {
+        font-size: 12px;
+    }
+
+    .footer-catalog {
+        width: 24.999%;
+    }
+
+    .footer-contacts {
+        width: 41.666%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .footer-company {
+        width: 33.333%;
+    }
+
+    .footer-company p {
+        font-size: 14px;
+    }
+
+    .footer-menu {
+        width: 33.333%;
+    }
+
+    .footer-catalog {
+        width: 33.333%;
+    }
+
+    ul.menu-bottom li a {
+        font-size: 14px;
+    }
+
+    .footer-contacts {
+        width: 100%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: 25px;
+    }
+
+    .contact__list__footer {
+        width: 33.333%;
+        height: auto;
+    }
+
+    .contact__item__footer p {
+        font-size: 16px;
+    }
+
+    .contact__item__footer a {
+        font-size: 16px;
+    }
+
+    .seacrh-footer {
+        width: 33.333%;
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    input.search-input {
+        width: 100% !important;
+    }
+
+    input.search-submit {
+        position: absolute !important;
+        right: 20px;
+        top: 14px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact__item__footer p {
+        font-size: 14px;
+    }
+
+    .contact__item__footer a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .footer-row {
+        padding: 30px 0;
+    }
+
+    .footer-company {
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-company img {
+        width: 120px;
+        height: 100%;
+        margin-right: 25px;
+        margin-bottom: 0;
+    }
+
+    .footer-company p {
+        margin-bottom: 5px;
+    }
+
+    .footer-menu {
+        width: 50%;
+    }
+
+    .footer-catalog {
+        width: 50%;
+    }
+
+    ul.menu-bottom li a {
+        font-size: 16px;
+    }
+
+    .contact__list__footer {
+        width: 50%;
+    }
+
+    .contact__item__footer p {
+        font-size: 16px;
+    }
+
+    .contact__item__footer a {
+        font-size: 16px;
+    }
+
+    .seacrh-footer {
+        width: 50%;
+        padding-top: 25px;
+    }
+
+    .developed {
+        right: 2%;
+        bottom: 5%;
+    }
+
+    .developed p {
+        font-size: 14px;
+    }
+
+    .developed a {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+
+    .footer-row {
+        padding: 30px 0;
+    }
+
+    .footer-company img {
+        width: 90px;
+        margin-right: 15px;
+    }
+
+    .footer-company p {
+        font-size: 12px;
+    }
+
+    .footer-menu h3, .footer-catalog h3 {
+        font-size: 18px;
+    }
+
+    ul.menu-bottom li {
+        margin-bottom: 15px;
+    }
+
+    ul.menu-bottom li a {
+        font-size: 12px;
+    }
+
+    .contact__item__footer {
+        margin-bottom: 5px;
+    }
+
+    .contact__item__footer p {
+        font-size: 12px;
+    }
+
+    .contact__item__footer a {
+        font-size: 12px;
+    }
+
+    .seacrh-footer {
+        width: 100%;
+    }
+
+    input.search-input, input.search-input::placeholder {
+        font-size: 14px;
+    }
+
+    .developed {
+        text-align: center;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    .developed p {
+        font-size: 12px;
+    }
+
+    .developed a {
+        font-size: 14px;
+    }
+
+}

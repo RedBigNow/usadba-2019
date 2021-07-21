@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACK,AAAD,mBAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAEhB;;AAHA,AAEG,mBAFG,AAEF,UAAU,CAAC;EAAE,OAAO,EAAE,KAAK;CAAI",
+    "sources": [
+        "ui-tab.scss"
+    ],
+    "names": [],
+    "file": "ui-tab.css"
+}

@@ -1,0 +1,153 @@
+.add-review {
+    margin: 40px 0;
+}
+
+.review__list {
+    margin-top: 80px;
+}
+
+.review__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.review__item__photo {
+    position: relative;
+    width: 10%;
+}
+
+.review__item__photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+p.review-date {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.review__item-content {
+    position: relative;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 30%;
+}
+
+.review__item-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review__item-author h2 {
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 500;
+    color: $dark;
+    margin: 0;
+}
+
+.real-buyer {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.real-buyer img {
+    width: 18px;
+    margin-right: 5px;
+    border-radius: 0;
+}
+
+.real-buyer p {
+    font-size: 14px;
+    color: #5AAC45;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 0 !important;
+}
+
+.review__item-text {
+    position: relative;
+}
+
+.review__item-text p {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1366px) {
+
+    .review__item-content {
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .review__item__photo {
+        width: 25%;
+    }
+
+    .review__item-author h2 {
+        font-size: 18px;
+    }
+
+    .review__item-content {
+        width: 75%;
+    }
+
+    .review__item-text p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .add-review {
+        text-align: center;
+    }
+
+    .review__item {
+        margin-bottom: 40px;
+    }
+
+    .review__item__photo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .review__item__photo img {
+        width: 35%;
+    }
+
+    p.review-date {
+        margin-bottom: 10px !important;
+    }
+
+    .review__item-content {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .review__item-author {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .review__item-author h2 {
+        width: 100%;
+    }
+
+    .real-buyer {
+        margin: 10px auto 0 auto;
+    }
+
+    .review__item-text {
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,517 @@
+.page-content p {
+    margin-bottom: 30px;
+}
+
+//-----------Страница "О компании"----------------
+.about-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-col {
+    width: 50%;
+}
+
+.about-col__img {
+    width: 50%;
+    text-align: center;
+}
+
+.about-col__img img {
+    max-width: 50%;
+}
+
+.about-col p {
+    margin-bottom: 30px;
+}
+
+
+.btn-about {
+    padding-top: 20px;
+}
+
+.alert-about {
+    display: flex;
+    align-items: center;
+    background: #E7E9E7;
+    border-radius: 20px;
+    padding: 60px 40px;
+    margin-top: 60px;
+}
+
+.alert-about img {
+    width: 25%;
+}
+
+.alert-about p {
+    font-size: 21px;
+    margin-bottom: 0;
+    padding-left: 60px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .about-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-col__img {
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+}
+
+  .about-col__img img {
+    max-width: 60%;
+  }
+
+  .alert-about {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .alert-about img {
+    width: 40%;
+    margin: 0 auto 20px auto;
+  }
+
+  .alert-about p {
+    padding-left: 0;
+  }
+
+  .content-about {
+    text-align: center;
+  }
+
+}
+
+
+
+//---------Ответы на вопросы на странице "О компании"--------------
+
+.faq {
+    padding: 80px 0;
+}
+
+.faq h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0 0 60px 0;
+}
+
+.transition, p, ul.faq-list li i:before, ul.faq-list li i:after {
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .flipIn, ul.faq-list li {
+    animation: flipdown 0.5s ease both;
+  }
+  
+  ul.faq-list  h3 {
+    font-family: 'Montserrat';
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+    color: $dark;
+  }
+
+  
+  ul.faq-list {
+    list-style: none;
+    perspective: 900;
+    padding: 0;
+    margin: 0;
+  }
+  ul.faq-list li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 1px solid #E7E9E7;
+  }
+  ul.faq-list li:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+  ul.faq-list li:nth-of-type(2) {
+    animation-delay: 0.75s;
+  }
+  ul.faq-list li:nth-of-type(3) {
+    animation-delay: 1s;
+  }
+  ul.faq-list li:last-of-type {
+    padding-bottom: 0;
+  }
+  ul.faq-list li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 35px;
+    right: 0;
+  }
+  ul.faq-list li i:before, ul li i:after {
+    content: "";
+    position: absolute;
+    background-color: $dark;
+    width: 3px;
+    height: 9px;
+  }
+  ul.faq-list li i:before {
+    transform: translate(-2px, 0) rotate(45deg);
+  }
+  ul.faq-list li i:after {
+    transform: translate(2px, 0) rotate(-45deg);
+  }
+  ul.faq-list li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+  }
+  ul.faq-list li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+  ul.faq-list li input[type=checkbox]:checked ~ i:before {
+    transform: translate(2px, 0) rotate(45deg);
+  }
+  ul.faq-list li input[type=checkbox]:checked ~ i:after {
+    transform: translate(-2px, 0) rotate(-45deg);
+  }
+  
+  @keyframes flipdown {
+    0% {
+      opacity: 0;
+      transform-origin: top center;
+      transform: rotateX(-90deg);
+    }
+    5% {
+      opacity: 1;
+    }
+    80% {
+      transform: rotateX(8deg);
+    }
+    83% {
+      transform: rotateX(6deg);
+    }
+    92% {
+      transform: rotateX(-3deg);
+    }
+    100% {
+      transform-origin: top center;
+      transform: rotateX(0deg);
+    }
+  }
+  
+
+.faq-callback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 60px 0;
+    margin-top: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+.faq-callback__info {
+    padding: 0 5%;
+}
+
+.faq-callback__info p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+  .faq {
+    padding: 40px 0 0 0;
+  }
+
+  .faq-callback {
+    display: block;
+    text-align: center;
+  }
+
+  .faq-callback__btn {
+    margin-bottom: 30px;
+  }
+
+  ul.faq-list li p {
+    text-align: center;
+  }
+
+  ul.faq-list li i {
+    margin-top: 30px;
+}
+
+}
+
+
+
+
+//----------Страница "Контакты"--------------
+
+.contacts-map {
+    margin-top: 150px;
+}
+
+
+//----------Страница "Индивидуальный подбор"---------
+
+
+.selection-container {
+    position: relative;
+    background: #fff;
+    padding: 10px 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+    margin-top: 60px;
+}
+
+form.selection-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.selection-form__select {
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 50px;
+}
+
+.selection-form__select select {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    appearance: none;
+    background: url(/static/images/general/arrow-down.svg) no-repeat right 25px center #eaeaea;
+    background-size: 12px;
+}
+
+.selection-form__checkbox {
+  width: 33%;
+  margin-bottom: 50px;
+}
+
+.selection-form__input {
+  width: 33%;
+  margin-bottom: 50px;
+}
+
+.selection-form__contacts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.selection-form__input {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.selection-form__input input {
+  max-width: 320px;
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  background: #eaeaea;
+  padding: 15px 25px;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.selection-form__checkbox input[type="checkbox"] {
+  display: none;
+ }
+  
+ .selection-form__checkbox label {
+  color: #000;
+  cursor: pointer;
+  line-height: 30px;
+ }
+  
+ .selection-form__checkbox label:before {
+  content: "";
+  color: $dark;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background: #eaeaea;
+  vertical-align: middle;
+ }
+  
+.selection-form__checkbox input:checked + label:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+}
+
+
+.selection-form__input .politic-container {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+
+.selection-container img {
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+    width: 100%;
+    max-width: 30%;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .selection-container {
+    padding: 0px 40px;
+  } 
+
+  .selection-form__select {
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  .selection-form__checkbox {
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  .selection-form__input {
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  .selection-form__politic {
+    width: 40%;
+  }
+
+  .selection-container img {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    width: 100%;
+    max-width: 26%;
+  }
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .selection-form__select {
+    width: 48%;
+    margin: 20px 1%;
+  }
+
+  .selection-form__checkbox {
+    width: 48%;
+    margin: 20px 1%;
+  }
+
+  .selection-form__input {
+    width: 48%;
+    margin: 20px 1%;
+  }
+
+  .selection-form__politic {
+    width: 48%;
+    margin: 20px 1%;
+  }
+
+  .selection-container img {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .selection-container {
+    padding: 0px 20px;
+  }
+
+  .selection-form__select select {
+    font-size: 14px;
+  }
+
+  .selection-form__checkbox {
+    font-size: 14px;
+  }
+
+  .selection-form__input input {
+    font-size: 14px;
+  }
+
+  .selection-form__submit {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .selection-form__politic {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .selection-form__politic .politic-container{
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+
+  .selection-form__select {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .selection-form__select label {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .selection-form__select select {
+    margin: 0 auto;
+  }
+
+  .selection-form__checkbox {
+    width: 100%;
+    max-width: 320px;
+    margin: 15px auto;
+}
+
+  .selection-form__input {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .selection-form__input input {
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,187 @@
+.btn {
+    background: $green-btn;
+    border: 1px solid $green-btn;
+    border-radius: 25px;
+    color: $dark;
+    padding: 12px 25px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: $dark;
+}
+
+.btn-transparent {
+    background: transparent;
+}
+
+.btn-transparent:hover {
+    background: $green-btn;
+}
+
+
+.navigation {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-sales {
+    top: -5%;
+}
+
+.navigation img {
+    margin: 0;
+    cursor: pointer;
+}
+
+img.next-sale {
+    margin-left: 40px;
+}
+
+
+.nav-product {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 45%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-product__next {
+    background: #5AAC45;
+    padding: 9px 9px 9px 11px;
+    margin-right: -22px;
+}
+
+.nav-product__prev {
+    background: #5AAC45;
+    padding: 9px 11px 9px 9px;
+    margin-left: -22px;
+}
+
+.nav-product__next img {
+    width: 24px;
+}
+
+.nav-product__prev img {
+    width: 24px;
+}
+
+
+.btn-catalog {
+    font-size: 14px;
+    background: transparent;
+    transition: .3s;
+}
+
+.btn-catalog:hover {
+    background: $green-btn;
+}
+
+.btn-order {
+    font-size: 14px;
+}
+
+.btn-sale {
+    font-size: 14px;
+    padding: 10px 17px;
+}
+
+
+
+.read-more::after {
+    content: '';
+    background: url(/static/images/general/next-dark.svg) no-repeat;
+    background-size: 32px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 105%;
+    top: 3px;
+    transition: .3s;
+}
+
+.read-more:hover::after {
+    left: 110%;
+}
+
+
+.slick-dots li button:before {
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 1632px) {
+    .navigation {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .nav-offers, .nav-sales {
+        display: none;
+    }
+    
+
+}
+
+
+
+//Кастомный чекбокс
+.switch {
+    display: inline-block;
+    height: 26px;
+    position: relative;
+    width: 46px;
+    margin-right: 10px;
+  }
+  
+  .switch input {
+    display:none;
+  }
+  
+  .slider-checkbox {
+    width: 46px;
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+  
+  .slider-checkbox:before {
+    background-color: #fff;
+    bottom: 3px;
+    content: "";
+    height: 20px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 20px;
+  }
+  
+  input:checked + .slider-checkbox {
+    background-color: $green;
+  }
+  
+  input:checked + .slider-checkbox:before {
+    transform: translateX(18px);
+  }
+  
+  .slider-checkbox.round-checkbox {
+    border-radius: 34px;
+  }
+  
+  .slider-checkbox.round-checkbox:before {
+    border-radius: 50%;
+  }

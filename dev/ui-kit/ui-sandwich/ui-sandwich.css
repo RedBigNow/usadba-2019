@@ -1,0 +1,46 @@
+.sandwich {
+  cursor: pointer;
+  height: 20px;
+  position: relative;
+  width: 32px;
+}
+
+.sandwich.is-active .sandwich__line--top {
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sandwich.is-active .sandwich__line--middle {
+  opacity: 0;
+}
+
+.sandwich.is-active .sandwich__line--bottom {
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sandwich__line {
+  background-color: #000000;
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all linear .4s;
+  transition: all linear .4s;
+  width: 100%;
+}
+
+.sandwich__line--top {
+  top: 0;
+}
+
+.sandwich__line--middle {
+  top: 9px;
+}
+
+.sandwich__line--bottom {
+  top: 18px;
+}
+/*# sourceMappingURL=ui-sandwich.css.map */

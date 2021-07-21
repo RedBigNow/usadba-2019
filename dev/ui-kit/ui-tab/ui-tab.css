@@ -1,0 +1,8 @@
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-content__item.is-active {
+  display: block;
+}
+/*# sourceMappingURL=ui-tab.css.map */

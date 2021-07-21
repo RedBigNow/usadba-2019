@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,CAAC;CAOb;;AAVD,AAKQ,YALI,GAIJ,CAAC,AACA,IAAK,CAAA,WAAW,EAAE;EAAE,YAAY,EAAE,IAAI;CAAI;;AAE9C,AAAD,kBAAO,CAAC;EACJ,WAAW,EAAE,MAAM;CACtB",
+    "sources": [
+        "ui-breadcrumbs.scss"
+    ],
+    "names": [],
+    "file": "ui-breadcrumbs.css"
+}

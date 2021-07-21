@@ -1,0 +1,636 @@
+header {
+    flex: 0 0 auto;
+    z-index: 999;
+    width: 100%;
+    background: #E7E9E7;
+}
+
+.homepage header {
+    position: absolute;
+    top: 0;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8% 15px 8%;
+}
+
+.toolbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar__logo img {
+    width: 85px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.toolbar__logo p {
+    font-size: 16px;
+}
+
+.toolbar__adress {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+ul.toolbar__adress-list {
+    position: relative;
+    font-weight: bold;
+    cursor: help;
+}
+
+li.toolbar__adress-item {
+    position: relative;
+    z-index: 999;
+}
+
+li.toolbar__adress-item::after {
+    content: '';
+    background: url(/static/images/general/arrow-down.svg) no-repeat;
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 9;
+    right: -7%;
+    top: 3px;
+    transition: .3s;
+}
+
+ul.toolbar__adress-submenu {
+    position: absolute;
+    z-index: 99;
+    margin-left: -9999px;
+    top: 18px;
+    opacity: 0;
+    transition: opacity .3s;
+    background: #fff;
+    width: 290px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03); 
+    cursor: default;
+}
+
+ul.toolbar__adress-submenu li {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+li.toolbar__adress-item:hover ul.toolbar__adress-submenu {
+    opacity: 1;
+    margin-left: 0;
+}
+
+ul.toolbar__adress-list::before {
+    content: '';
+    background: url(/static/images/general/marker-top.svg) no-repeat;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: -10%;
+    top: -5px;
+}
+
+.toolbar__adress p {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+
+.toolbar__contacts {
+    display: flex;
+    flex-flow: column;
+}
+
+.toolbar__contacts a {
+    margin: 5px 0;
+}
+
+.toolbar__contacts a.phone {
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+.toolbar__contacts a.phone::before {
+    content: '';
+    background: url(/static/images/general/phone-top.svg) no-repeat;
+    width: 100%;
+    height: 21px;
+    position: absolute;
+    right: 25px;
+    top: -1px;
+}
+
+.toolbar__contacts a.phone:hover {
+    color: $green;
+}
+
+.toolbar__contacts a.mail {
+    font-size: 14px;
+    transition: .3s;
+}
+
+.toolbar__contacts a.mail:hover {
+    color: $green;
+}
+
+.toolbar__callback span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 125%;
+    border: 1px solid $green-btn;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.toolbar__callback span:hover {
+    background: $green-btn;
+}
+
+
+.toolbar__burger {
+    display: none;
+}
+
+.burger {
+    width: 55px;
+    padding: 0 12px;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+}
+  
+.burger__icon {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background: $dark;
+    height: 2px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.burger__icon:before, .burger__icon:after {
+    content: "";
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: $dark;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+.burger__icon:before {
+    top: -9px;
+}
+.burger__icon:after {
+    bottom: -9px;
+}
+
+.burger__text {
+    display: none;
+}
+
+@media screen and (min-width: 770px) {
+
+.nav-menu {
+    position: relative;
+    max-width: 75%;
+    margin: 0 auto -25px auto;
+}
+
+ul.nav-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    padding: 0 5%;
+}
+
+li.nav-menu__item {
+    float: left;
+    position: relative;
+    padding: 17px 0;
+}
+
+li.nav-menu__item a {
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    transition: .3s;
+}
+
+li.nav-menu__item:hover a {
+    color: $green;
+}
+
+li.nav-menu__item-parent::after {
+    content: '';
+    background: url(/static/images/general/arrow-down.svg) no-repeat;
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 9;
+    right: -30%;
+    top: 22px;
+    transition: .3s;
+}
+
+ul.nav-submenu {
+    position: absolute;
+    z-index: 999;
+    top: 100%;
+    min-width: 250px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0; 
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear; 
+}
+
+ul.nav-submenu li {
+    position: relative;
+    padding: 15px 20px;
+}
+
+ul.nav-submenu li a {
+    color: $dark !important;
+    font-size: 14px;
+    transition: .3s;
+}
+
+ul.nav-submenu li a:hover {
+    color: $green !important;
+}
+
+ul.nav-submenu ul.nav-submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    transition: .3s linear;
+}
+
+nav.nav-menu li:hover > .nav-submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+}
+
+li.nav-submenu__item.nav-menu__item-parent::after {
+    right: 10%;
+    top: 17px;
+}
+
+.nav-submenu__item-back {
+    display: none;
+}
+
+.nav-menu__item-parent:hover ul.nav-submenu {
+    position: absolute;
+    opacity: 1;
+    margin-left: 0;
+}
+
+li.nav-submenu__item:hover ul.nav-submenu {
+    position: absolute;
+    left: 100%;
+    opacity: 1;
+    margin-left: 0;
+}
+
+}
+
+@media screen and (max-width: 1780px) {
+    .toolbar {
+        padding: 25px 5% 15px 5%;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+
+    .toolbar__logo p {
+        font-size: 14px;
+    }
+
+    li.nav-menu__item a {
+        font-size: 16px;
+    }
+
+    li.nav-menu__item-parent::after {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .toolbar {
+        padding: 25px 0% 15px 0%;
+    }
+
+    .nav-menu {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .toolbar__logo img {
+        max-width: 75px;
+        margin-right: 10px;
+    }
+
+    .toolbar__logo p {
+        font-size: 12px;
+    }
+
+    ul.toolbar__adress-list::before {
+        content: '';
+        background-size: 14px;
+        left: -8%;
+        top: -3px;
+    }
+
+    li.toolbar__adress-item {
+        font-size: 14px;
+    }
+
+    ul.toolbar__adress-submenu li {
+        font-size: 12px;
+    }
+
+    .toolbar__contacts a.phone {
+        font-size: 14px;
+    }
+
+    .toolbar__contacts a.phone::before {
+        height: 18px;
+    }
+
+    .toolbar__contacts a.mail {
+        font-size: 12px;
+    }
+
+    .toolbar__callback span {
+        font-size: 14px;
+    }
+
+    li.nav-menu__item a {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .toolbar {
+        padding: 15px 0% 15px 0%;
+    }
+
+    .toolbar__logo img {
+        max-width: 75px;
+        margin-right: 0;
+    }
+
+    .toolbar__logo p {
+        display: none;
+    }
+
+    li.toolbar__adress-item {
+        font-size: 14px;
+    }
+
+    .toolbar__adress p {
+        font-size: 12px;
+        margin: 8px 0 0 0;
+    }
+
+    ul.toolbar__adress-list::before {
+        display: none;
+    }
+
+    .toolbar__contacts a.phone {
+        font-size: 14px;
+    }
+
+    .toolbar__contacts a.phone::before {
+        display: none;
+    }
+
+    .toolbar__contacts a.mail {
+        font-size: 12px;
+    }
+
+    .toolbar__callback span {
+        font-size: 14px;
+    }
+
+    .nav-menu {
+        max-width: 95%;
+    }
+
+}
+
+
+@media screen and (max-width: 770px) {
+    .toolbar {
+        justify-content: space-between;
+    }
+    .toolbar__logo {
+        width: 10%;
+    }
+
+    .toolbar__logo img {
+        max-width: 100%;
+    }
+
+    .toolbar__contacts {
+        width: 50%;
+    }
+
+    .toolbar__adress {
+        display: none;
+    }
+    .toolbar__burger {
+        display: block;
+    }
+
+    .mobile-menu__overlay, .menu-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .menu-container, .menu-container ul li ul{
+        -webkit-transition: all 200ms;
+        -moz-transition: all 200ms;
+        transition: all 200ms;
+    }
+    .mobile-menu__overlay{
+        display: none;
+        cursor: pointer;
+        z-index: 10200;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .menu-container{
+        -webkit-transform: translateX(-300px);
+        transform: translateX(-300px);
+        width: 300px;
+        padding: 10px;
+        overflow: hidden;
+        z-index: 99999;
+        background: $green;
+    }
+    .menu-container.loaded{
+           -webkit-transform: translateX(0px);
+           transform: translateX(0px);
+    }
+    .menu-container .mobile-menu__content{
+        overflow: auto;
+        max-height: 100%;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    .menu-container ul{
+        margin: 0;
+        padding: 0;
+    }
+    .menu-container ul li{
+        list-style: none;
+    }
+    .menu-container ul li a{
+        display: block;
+        padding: 20px;
+        line-height: 150%;
+        font-size: 16px;
+        background: $green;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+    .menu-container ul li.nav-menu__item-parent{
+        padding-right: 50px;
+        background: $green url("/static/images/general/next.svg") right 20px center no-repeat;
+        background-size: 40px;
+    }
+    .menu-container ul li.nav-menu__item-parent:hover{
+        background: $green url("/static/images/general/next.svg") right 20px center no-repeat;
+        background-size: 40px;
+    }
+    .menu-container ul li.nav-submenu__item-back{
+        background: url("/static/images/general/prev.svg") left 20px center no-repeat;
+        background-size: 40px;
+        box-sizing: border-box;
+        min-height: 50px;
+        color: transparent;
+    }
+    .menu-container ul li.nav-submenu__item-back:hover{
+        background: url("/static/images/general/prev.svg") left 20px center no-repeat;
+        background-size: 40px;
+    }
+
+    .menu-container ul li.nav-submenu__item-back a{
+        background: #4f8a40;
+    }
+
+    .menu-container ul li a:hover{
+        background: $green;
+    }
+    .menu-container ul li ul{
+        -webkit-transform: translateX(300px);
+        transform: translateX(300px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $green;
+        z-index: 2;
+    }
+    .menu-container ul li ul.loaded{
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    .menu-container ul li ul.activity{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 620px) {
+    .toolbar__contacts {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .toolbar__logo {
+        width: 12%;
+    }
+    .toolbar__contacts {
+        width: 30%;
+    }
+    .menu-container {
+        -webkit-transform: translateX(-240px);
+        -ms-transform: translateX(-240px);
+        transform: translateX(-240px);
+        width: 240px;
+    }
+    .menu-container ul li a {
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .toolbar__logo {
+        width: 18%;
+    }
+    .toolbar__contacts {
+        width: 60%;
+    }
+    .toolbar__callback {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .toolbar__logo {
+        width: 20%;
+        margin-right: 2%;
+    }
+}
+
+
+
+#preloader_preload {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: $green url(/static/images/general/preloader.svg) center center no-repeat;
+    background-size:92px;
+}

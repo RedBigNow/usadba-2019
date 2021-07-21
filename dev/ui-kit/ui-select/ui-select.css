@@ -1,0 +1,24 @@
+.select {
+  position: relative;
+}
+
+.select.is-open .select__body {
+  display: block;
+}
+
+.select__header {
+  cursor: pointer;
+}
+
+.select__body {
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.select__item {
+  cursor: pointer;
+}
+/*# sourceMappingURL=ui-select.css.map */

@@ -1,0 +1,506 @@
+section.hero
+    video(id="videoHero" class="hero__video" autoplay="autoplay" playsinline loop="loop" preload="auto" muted="muted" poster="/static/images/general/hero-bg.jpg")
+        source(src="/public/video/video_main.webm" type="video/webm")
+        source(src="/static/images/general/video-2.mp4")
+    script document.getElementById('videoHero').play();
+    .hero__content
+        .container
+            h1 Усадьба
+            h2 Продажа товаров для дачи и сада
+            a.btn(href="/catalog.html") Перейти в каталог
+    .scroll-wrap
+        .mouse
+            .scroller
+section.sale-home#salesHome
+    .container
+        .sale-block
+            h2 Получите скидку на доставку 20%
+            img(src="/static/images/general/sale-car.png", alt="Скидка на доставку")
+            .sale-block__timer
+                p.timer-title До конца акции
+                script var countDownDate = new Date("May 30, 2020 12:00:00").getTime();
+                #timer
+                    .timer-item
+                        #days
+                        p Дней
+                    .timer-item
+                        #hours
+                        p Часов
+                    .timer-item
+                        #minutes
+                        p Минут
+                    .timer-item
+                        #seconds
+                        p Секунд
+                a.btn(href="#" data-fancybox data-src="#callback") Оставить заявку
+section.offers
+    .container
+        ul.tab__list
+            li.tab__list-item.tab__list-item_active(data-tab="1") Хиты продаж
+            li.tab__list-item(data-tab="2") Новинки
+            li.tab__list-item(data-tab="3") Скидки
+        .navigation.nav-offers.nav-offers__active(data-tab="1")
+            img.prev-offer#prevHit(src="/static/images/general/prev-dark.svg")
+            img.next-offer#nextHit(src="/static/images/general/next-dark.svg")
+        .navigation.nav-offers(data-tab="2")
+            img.prev-offer#prevNew(src="/static/images/general/prev-dark.svg")
+            img.next-offer#nextNew(src="/static/images/general/next-dark.svg")
+        .navigation.nav-offers(data-tab="3")
+            img.prev-offer#prevSale(src="/static/images/general/prev-dark.svg")
+            img.next-offer#nextSale(src="/static/images/general/next-dark.svg")
+        .tab__content
+            .tab__content-item.tab__content-item_active(data-tab="1")
+                .offer__container
+                    .catalog__list.catalog__list_offers#hitOffers
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт” СПК стандарт 4мм
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+            .tab__content-item(data-tab="2")
+                .offer__container
+                    .catalog__list.catalog__list_offers#newOffers
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт” СПК стандарт 4мм 2
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+            .tab__content-item(data-tab="3")
+                .offer__container
+                    .catalog__list.catalog__list_offers#saleOffers
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт” СПК стандарт 4мм 3
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+                        .catalog__item.offer__item
+                            .catalog__item-img
+                                a(href="/product.html")
+                                    img(src="/static/images/general/product.png", alt="")
+                            .catalog__item-info
+                                a(href="/product.html")
+                                    .catalog__item-title(data-item-name="Теплица “Стандарт” СПК стандарт 4мм")
+                                        h3 Теплица “Стандарт”
+                                    .catalog__item-subtitle
+                                        p Оцинкованная труба 20х20, СПК стандарт 4мм
+                                .catalog__item-price
+                                    .actual-price
+                                        p от <span>10000</span> руб.
+                                    .old-price
+                                        p от 15000 руб.
+                                .catalog__item-order(data-item-link="https://www.meduza-web.ru/")
+                                    a.btn.btn-catalog(href="/product.html") Подробнее
+                                    a.btn.btn-order(href="#" data-fancybox data-src="#buy1click") Заказать
+section.category-home
+    .container
+        h2 Каталог
+        .category__row
+            .category__item.category__item_big
+                h3 Теплицы
+                img(src="/static/images/general/Prestizh.png", alt="")
+                a(href="/catalog-2.html")
+                a.read-more.read-more_category(href="/catalog-2.html") Перейти
+            .category__item.category__item_big
+                h3 Беседки
+                img(src="/static/images/general/gazebo.png", alt="")
+                a(href="/catalog-2.html")
+                a.read-more.read-more_category(href="/catalog-2.html") Перейти
+            .category__item.category__item_small
+                h3 Детские<br>площадки
+                img(src="/static/images/general/playground.png", alt="")
+                a(href="/catalog-2.html")
+                a.read-more.read-more_category(href="/catalog-2.html") Перейти
+            .category__item.category__item_small
+                h3 Товары<br>для сада
+                img(src="/static/images/general/tools.png", alt="")
+                a(href="/catalog-2.html")
+                a.read-more.read-more_category(href="/catalog-2.html") Перейти
+            .category__item.category__item_small
+                h3 Материалы<br>для беседок<br>и теплиц
+                img(src="/static/images/general/materials.png", alt="")
+                a(href="/catalog-2.html")
+                a.read-more.read-more_category(href="/catalog-2.html") Перейти
+section.sales-home
+    .container
+        h2 Акции
+        .sales__container
+            .navigation.nav-sales
+                a.all-sales(href="/sales.html") Все акции
+                img.prev-sale(src="/static/images/general/prev-dark.svg")
+                img.next-sale(src="/static/images/general/next-dark.svg")
+            .sale__list.sale__list-slider
+                .sale__item
+                    a(href="/sale-detail.html")
+                    img(src="/static/images/general/sale-img.png", alt="")
+                    .sale__item-info
+                        p Скидка -50% до конца года Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        p.date-sale до 30 мая
+                        .read-more_sale
+                            a.btn.btn-sale(href="/sale-detail.html") Подробнее
+                .sale__item
+                    a(href="/sale-detail.html")
+                    img(src="/static/images/general/sale-img.png", alt="")
+                    .sale__item-info
+                        p Скидка -50% до конца года
+                        p.date-sale до 12 июня
+                        .read-more_sale
+                            a.btn.btn-sale(href="/sale-detail.html") Подробнее
+                .sale__item
+                    a(href="/sale-detail.html")
+                    img(src="/static/images/general/sale-img.png", alt="")
+                    .sale__item-info
+                        p Скидка -50% до конца года
+                        p.date-sale до 30 мая
+                        .read-more_sale
+                            a.btn.btn-sale(href="/sale-detail.html") Подробнее
+                .sale__item
+                    a(href="/sale-detail.html")
+                    img(src="/static/images/general/sale-img.png", alt="")
+                    .sale__item-info
+                        p Скидка -50% до конца года
+                        p.date-sale до 12 июня
+                        .read-more_sale
+                            a.btn.btn-sale(href="/sale-detail.html") Подробнее
+                .sale__item
+                    a(href="/sale-detail.html")
+                    img(src="/static/images/general/sale-img.png", alt="")
+                    .sale__item-info
+                        p Скидка -50% до конца года
+                        p.date-sale до 12 июня
+                        .read-more_sale
+                            a.btn.btn-sale(href="/sale-detail.html") Подробнее
+section.about-home
+    .container
+        h2 О компании
+        .statistic__row
+            .statistic__col
+                p.statistic-title(data-count="100") 0
+                p Довольных клиентов
+            .statistic__col
+                p.statistic-title(data-count="11") 0
+                p Лет опыта
+        .about__info
+            p С 2014 года наша компания производит продукцию под торговой маркой «Усадьба», наш слоган – «Мы работаем с теплом». В свою продукцию мы вкладываем все тепло своих рук, усердный труд и любовь к своему делу. В процессе производства мы постоянно совершенствуем свою продукцию, учитывая пожелания наших заказчиков.
+            p На данный момент наше производство позволяет изготовлять в год около 4000 теплиц. Мы начинали с одного вида теплиц, теперь вы можете выбрать, как минимум из 7 разных теплиц, которые различаются как по размерам, так и по жесткости каркаса, степени разборности, строению в целом.
+            a.read-more.read-more_about(href="/page-detail.html") Подробнее
+    img.about-top(src="/static/images/general/flowers-pot.png")
+    img.about-bottom(src="/static/images/general/about-man.png")
+section.delivery
+    .container
+        h2 Доставка и сборка
+        .delivery__row
+            .delivery__col
+                img(src="/static/images/general/basket.svg")
+                p Собираем ваш заказ на складе<br>в течении 3-х рабочих дней.
+            .delivery__col
+                p Привозим ваш заказ в удобное вам время,<br>на специализированном транспорте.
+                img(src="/static/images/general/delivery-truck.svg")
+            .delivery__col
+                img(src="/static/images/general/working.svg")
+                p Ваш заказ собирает бригада профессиональных рабочих,<br>в течении одного дня.
+section.reviews-slider
+    .container
+        h2 Отзывы
+        .navigation.nav-reviews
+            img.prev-review(src="/static/images/general/prev.svg")
+            img.next-review(src="/static/images/general/next.svg")
+        .review__list_slider
+            .review__item_slider
+                img(src="/static/images/general/review.jpg")
+                p Очень хорошая компания. Опыта в подборе теплицы раньше не было, но менеджеры компании все хорошо объяснили и помогли
+                p.author-name Артем Иполитов
+            .review__item_slider
+                img(src="/static/images/general/review.jpg")
+                p Очень хорошая компания. Опыта в подборе теплицы раньше не было, но менеджеры компании все хорошо объяснили и помогли
+                p.author-name Артем Иполитов
+            .review__item_slider
+                img(src="/static/images/general/review.jpg")
+                p Очень хорошая компания. Опыта в подборе теплицы раньше не было, но менеджеры компании все хорошо объяснили и помогли
+                p.author-name Артем Иполитов
+            .review__item_slider
+                img(src="/static/images/general/review.jpg")
+                p Очень хорошая компания. Опыта в подборе теплицы раньше не было, но менеджеры компании все хорошо объяснили и помогли
+                p.author-name Артем Иполитов
+        .all-reviews
+            a.btn(href="/reviews.html") Все отзывы
+section.contacts
+    .container
+        .contacts__row
+            .contacts__left
+                h2 Контакты
+                p Мы всегда рады ответить<br>на все интересующие вас вопросы
+                    .contact__list
+                        .contact__item
+                            img(src="/static/images/general/marker.svg")
+                            p г. Нижний Новгород,<br>Сормовское шоссе, д.1
+                        .contact__item
+                            img(src="/static/images/general/phone.svg")
+                            a(href="tel:+79503333333") +7 (950) 333-33-33
+                        .contact__item
+                            img(src="/static/images/general/mail.svg")
+                            a(href="mailto:info@mail.ru") info@mail.ru
+                    .contacts-line
+                    .contact__list
+                        .contact__item
+                            img(src="/static/images/general/marker.svg")
+                            p Ниж.область, г.Шахунья,<br>ул.Черняховского, д.16
+                        .contact__item
+                            img(src="/static/images/general/phone.svg")
+                            a(href="tel:+79503333333") +7 (950) 333-33-33
+                        .contact__item
+                            img(src="/static/images/general/mail.svg")
+                            a(href="mailto:info@mail.ru") info@mail.ru
+            .contacts__right
+                .contacts__form-block
+                    h4 Оставьте заявку<br>и мы вам перезвоним
+                    form(class="contacts-form" id="contacts-form")
+                        input(class="contacts-form__input" type="text" name="name" placeholder="Имя")
+                        input(class="contacts-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                        button(class="btn contacts-form__submit") Отправить заявку
+                        .politic-container
+                            label(class="switch" for="checkbox")
+                                input(type="checkbox" id="checkbox" checked required="")
+                                .slider-checkbox.round-checkbox
+                            span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>
+                    img(src="/static/images/general/tomatoes.png")
+
+
+            
+            

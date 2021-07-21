@@ -1,0 +1,27 @@
+ul.breadcrumbs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.catalog-detail ul.breadcrumbs {
+    margin-left: 10px;
+}
+
+ul.breadcrumbs li {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+ul.breadcrumbs li.active {
+    color: $green;
+}
+
+ul.breadcrumbs li a {
+    font-size: 14px;
+    transition: .3s;
+}
+
+ul.breadcrumbs li a:hover {
+    color: $green;
+}

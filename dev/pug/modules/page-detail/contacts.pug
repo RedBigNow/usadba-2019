@@ -1,0 +1,45 @@
+.container-page
+    ul.breadcrumbs
+        li
+            a(href="/") Главная /
+        li.active О компании
+    .contacts__row
+        .contacts__left
+            h1 Контакты
+            p Мы всегда рады ответить<br>на все интересующие вас вопросы
+                .contact__list
+                    .contact__item
+                        img(src="/static/images/general/marker.svg")
+                        p г. Нижний Новгород,<br>Сормовское шоссе, д.1
+                    .contact__item
+                        img(src="/static/images/general/phone.svg")
+                        a(href="tel:+79503333333") +7 (950) 333-33-33
+                    .contact__item
+                        img(src="/static/images/general/mail.svg")
+                        a(href="mailto:info@mail.ru") info@mail.ru
+                .contacts-line
+                .contact__list
+                    .contact__item
+                        img(src="/static/images/general/marker.svg")
+                        p Ниж.область, г.Шахунья,<br>ул.Черняховского, д.16
+                    .contact__item
+                        img(src="/static/images/general/phone.svg")
+                        a(href="tel:+79503333333") +7 (950) 333-33-33
+                    .contact__item
+                        img(src="/static/images/general/mail.svg")
+                        a(href="mailto:info@mail.ru") info@mail.ru
+        .contacts__right
+            .contacts__form-block
+                h4 Оставьте заявку<br>и мы вам перезвоним
+                form(class="contacts-form" id="contacts-form")
+                    input(class="contacts-form__input" type="text" name="name" placeholder="Имя")
+                    input(class="contacts-form__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                    button(class="btn contacts-form__submit") Отправить заявку
+                    .politic-container
+                        label(class="switch" for="checkbox")
+                            input(type="checkbox" id="checkbox" checked required="")
+                            .slider-checkbox.round-checkbox
+                        span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>
+                img(src="/static/images/general/tomatoes.png")
+.contacts-map
+    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ee0bc2a42ababd088397c2bf8e80641602f2875ad847ae1eaf351c8fe4318db&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=false")

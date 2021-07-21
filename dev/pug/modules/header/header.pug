@@ -1,0 +1,77 @@
+header.header
+	.container.header__container
+		.toolbar
+			.toolbar__logo
+				a(href="/")
+					img(src="/static/images/general/logo.svg", alt="Усадьба")
+				p Продажа товаров<br>для дачи и сада
+			.toolbar__adress
+				ul.toolbar__adress-list
+					li.toolbar__adress-item г. Нижний Новгород, ул.Новая д.3
+						ul.toolbar__adress-submenu
+							li г. Нижний Новгород, ул.Новая д.3
+							li г. Шахунья, ул.Черняховского д.16
+				p Доставка по всей области
+			.toolbar__contacts
+				a.phone(href="tel:+79262625289") +7 (926) 262-52-89
+				a.mail(href="mailto:info@usadba.ru") info@usadba.ru
+			.toolbar__callback
+				span.callback(data-fancybox data-src="#callback") Заказать звонок
+			.toolbar__burger
+				button(type="button" id="burger" class="burger")
+					span.burger__icon
+					span.burger__text
+					span.burger__hidden-text
+		.menu-container
+			nav.nav-menu
+				ul.nav-menu__list
+					li.nav-menu__item
+						a(href="/") Главная
+					li.nav-menu__item.nav-menu__item-parent
+						a(href="/catalog.html") Каталог
+						ul.nav-submenu
+							li.nav-submenu__item-back
+								a(href="#") Назад
+							li.nav-submenu__item.nav-menu__item-parent
+								a(href="/catalog-2.html") Теплицы
+								ul.nav-submenu
+									li.nav-submenu__item-back
+										a(href="#") Назад
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Теплицы 1
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Теплицы 2
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Теплицы 3
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Теплицы 4
+									li.nav-submenu__item
+										a(href="/selection.html") Индивидуальный подбор
+							li.nav-submenu__item.nav-menu__item-parent
+								a(href="#") Беседки
+								ul.nav-submenu
+									li.nav-submenu__item-back
+										a(href="#") Назад
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Беседки 1
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Беседки 2
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Беседки 3
+									li.nav-submenu__item
+										a(href="/catalog-detail.html") Беседки 4
+							li.nav-submenu__item
+								a(href="/catalog-2.html") Детские площадки
+							li.nav-submenu__item
+								a(href="/catalog-2.html") Товары для сада
+					li.nav-menu__item
+						a(href="/sales.html") Акции
+					li.nav-menu__item
+						a(href="/reviews.html") Отзывы
+					li.nav-menu__item
+						a(href="/about.html") О Компании
+					li.nav-menu__item
+						a(href="/contacts.html") Контакты
+	.mobile-menu__overlay
+#preloader
+	#preloader_preload

@@ -1,0 +1,64 @@
+.container-page
+    ul.breadcrumbs
+        li
+            a(href="/") Главная /
+        li.active Отзывы
+    .page-content
+        h1 Отзывы
+        .add-review
+            a.btn.btn-transparent(href="#" data-fancybox data-src="#review") Оставить отзыв
+        .review__list
+            .review__item
+                .review__item__photo
+                    img(src="/static/images/general/review.jpg", alt="")
+                    p.review-date 28.04.2020
+                .review__item-content
+                    .review__item-author
+                        h2 Артем Иполитов
+                        .real-buyer
+                            img(src="/static/images/general/check-mark.png")
+                            p Реальный покупатель
+                    article.review__item-text
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse.
+            .review__item
+                .review__item__photo
+                    img(src="/static/images/general/review.jpg", alt="")
+                    p.review-date 28.04.2020
+                .review__item-content
+                    .review__item-author
+                        h2 Артем Иполитов
+                        .real-buyer
+                            img(src="/static/images/general/check-mark.png")
+                            p Реальный покупатель
+                    article.review__item-text
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse.
+            .review__item
+                .review__item__photo
+                    img(src="/static/images/general/review.jpg", alt="")
+                    p.review-date 28.04.2020
+                .review__item-content
+                    .review__item-author
+                        h2 Артем Иполитов
+                        .real-buyer
+                            img(src="/static/images/general/check-mark.png")
+                            p Реальный покупатель
+                    article.review__item-text
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Tortor quis quam tristique suspendisse.
+.popup#review
+    .popup__wrap.modal_window
+        button(class="popup__close" data-fancybox-close) Закрыть
+        .popup__content
+            p.form-title Оставить отзыв
+            p.form-subtitle Заполните все поля и после модерации<br>Ваш отзыв появится на сайте.
+            .form-order__container
+                form(class="form-popup" id="form-review")
+                    input(class="form-popup__input" type="text" name="name" placeholder="Имя*" required)
+                    input(class="form-popup__input" type="email" name="email" placeholder="E-mail")
+                    textarea(class="form-popup__textarea" name="message" placeholder="Отзыв*" required)
+                    button(class="btn form-popup__submit") Отправить
+                    .politic-container
+                        label(class="switch" for="review-checkbox")
+                            input(type="checkbox" id="review-checkbox" checked required="")
+                            .slider-checkbox.round-checkbox
+                        span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>
+                        

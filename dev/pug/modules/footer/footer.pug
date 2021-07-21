@@ -1,0 +1,101 @@
+footer.footer
+    .container
+        .footer-row
+            .footer-company
+                a(href="/")
+                    img(src="/static/images/general/logo.svg", alt="Усадьба")
+                .footer-company__info
+                    p 2020 © "Усадьба"
+                    p Продажа товаров<br>для дачи и сада
+                    a.politic-footer(href="/page-detail.html") Политика конфиденциальности
+            .footer-menu
+                h3 Инфо
+                ul.menu-bottom
+                    li
+                        a(href="/") Главная
+                    li
+                        a(href="/catalog.html") Каталог
+                    li
+                        a(href="/sales.html") Акции
+                    li
+                        a(href="/reviews.html") Отзывы
+                    li
+                        a(href="/about.html") О компании
+                    li
+                        a(href="/contacts.html") Контакты
+            .footer-catalog
+                h3 Каталог
+                ul.menu-bottom
+                    li
+                        a(href="/catalog-2.html") Теплицы
+                    li
+                        a(href="/catalog-2.html") Беседки
+                    li
+                        a(href="/catalog-2.html") Детские площадки
+                    li
+                        a(href="/catalog-2.html") Товары для сада
+                    li
+                        a(href="/catalog-2.html") Материалы для беседок и теплиц
+            .footer-contacts
+                .contact__list__footer
+                    .contact__item__footer
+                        p г. Нижний Новгород,<br>Сормовское шоссе, д.1
+                    .contact__item__footer
+                        a(href="tel:+79503333333") +7 (950) 333-33-33<br>
+                    .contact__item__footer
+                        a(href="mailto:info@mail.ru") info@mail.ru
+                .contact__list__footer
+                    .contact__item__footer
+                        p Ниж.область, г.Шахунья,<br>ул.Черняховского, д.16
+                    .contact__item__footer
+                        a(href="tel:+79503333333") +7 (950) 333-33-33<br>
+                    .contact__item__footer
+                        a(href="mailto:info@mail.ru") info@mail.ru
+                .seacrh-footer
+                    .search_wrap
+                        form(role="search" class="search-form" action="rezultatyi-poiska.html" method="get")
+                            .form-group
+                                input(name="search" id="search" class="search-input form-control" type="search" placeholder="Поиск...")
+                                input(type="submit" class="search-submit" value="")
+                                input(type="hidden" name="id" value="115")    
+        .developed
+            p Разработано 
+                a(href="https://meduza-web.ru/" target="_blank") Meduza
+        a.top(href="#top" style="display: inline;") Вверх
+    .popup#callback
+        .popup__wrap.modal_window
+            button(class="popup__close" data-fancybox-close) Закрыть
+            .popup__content
+                p.form-title Закажите звонок
+                p.form-subtitle Заполните все поля и наш менеджер<br>свяжется с Вами в ближайшее время.
+                form(class="form-popup" id="form-callback")
+                    input(class="form-popup__input" type="text" name="name" placeholder="Имя")
+                    input(class="form-popup__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                    input(class="form-popup__input" type="email" name="email" placeholder="E-mail")
+                    input(class="form-popup__input" type="hidden" name="page")
+                    button(class="btn form-popup__submit") Отправить заявку
+                    .politic-container
+                        label(class="switch" for="checkbox-callback")
+                            input(type="checkbox" id="checkbox-callback" checked required="")
+                            .slider-checkbox.round-checkbox
+                        span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>
+    .popup#buy1click
+        .popup__wrap.modal_window
+            button(class="popup__close" data-fancybox-close) Закрыть
+            .popup__content
+                p.form-title Оформление заказа
+                p.form-subtitle Заполните все поля и наш менеджер<br>свяжется с Вами в ближайшее время.
+                .form-order__container
+                    form(class="form-popup" id="form-buy1click")
+                        input(class="form-popup__input" type="text" name="name" placeholder="Имя")
+                        input(class="form-popup__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                        input(class="form-popup__input" type="email" name="email" placeholder="E-mail")
+                        input(type="hidden" id="productName" name="product" value="")
+                        input(type="hidden" id="productLink" name="product-link" value="")
+                        input(type="hidden" name="page" value="")
+                        button(class="btn form-popup__submit") Отправить заказ
+                        .politic-container
+                            label(class="switch" for="buy1click")
+                                input(type="checkbox" id="buy1click" checked required="")
+                                .slider-checkbox.round-checkbox
+                            span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>

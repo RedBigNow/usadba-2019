@@ -1,0 +1,66 @@
+.container-page
+    ul.breadcrumbs
+        li
+            a(href="/") Главная /
+        li.active Индивидуальный подбор теплицы
+    .page-content
+        h1 Индивидуальный подбор теплицы
+        .selection-container
+            form(class="selection-form" id="selection")
+                .selection-form__select
+                    label Длина
+                    select(name="length")
+                        option(value="4 метра") 4 метра
+                        option(value="6 метров") 6 метров
+                        option(value="8 метров") 8 метров
+                        option(value="10 метров") 10 метров
+                        option(value="12 метров") 12 метров
+                .selection-form__select
+                    label Ширина
+                    select(name="width")
+                        option(value="2 метра") 2 метра
+                        option(value="3 метра") 3 метра
+                .selection-form__select
+                    label Вид поликарбоната
+                    select(name="polycarbonate")
+                        option(value="Эконом") Эконом
+                        option(value="Стандарт") Стандарт
+                        option(value="Премиум") Премиум
+                .selection-form__select
+                    label Тип соединения
+                    select(name="length")
+                        option(value="4 метра") Болтовое
+                        option(value="Крабовые соединения") Крабовые соединения
+                .selection-form__select
+                    label Толщина трубы
+                    select(name="width")
+                        option(value="20х20 мм") 20х20 мм
+                        option(value="25х25 мм") 25х25 мм
+                        option(value="20х40 мм") 20х40 мм
+                        option(value="2-я труба") 2-я труба
+                .selection-form__select
+                    label Покрытие металла
+                    select(name="polycarbonate")
+                        option(value="Порошковое покрытие") Порошковое покрытие
+                        option(value="Оцинковка") Оцинковка
+                .selection-form__checkbox
+                    input(type="checkbox" name="straight-wall" id="checkboxSelection-1")
+                    label(for="checkboxSelection-1") Прямая стенка
+                .selection-form__checkbox
+                    input(type="checkbox" name="reinforced-frame" id="checkboxSelection-2")
+                    label(for="checkboxSelection-2") Усиленный каркас
+                .selection-form__contacts
+                    .selection-form__input
+                        input(type="text" name="name" placeholder="Имя")
+                    .selection-form__input
+                        input(class="mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                .selection-form__contacts
+                    .selection-form__input.selection-form__submit
+                        button(class="btn form-submit") Подобрать теплицу
+                    .selection-form__input.selection-form__politic
+                        .politic-container
+                            label(class="switch" for="checkbox")
+                                input(type="checkbox" id="checkbox" checked required="")
+                                .slider-checkbox.round-checkbox
+                            span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>
+            img(src="/static/images/general/greenhouse-selection.png", alt="Индивидуальный подбор теплицы")

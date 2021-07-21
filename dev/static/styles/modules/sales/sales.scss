@@ -1,0 +1,177 @@
+.sale-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sale-info {
+    width: 70%;
+    padding-right: 15%;
+}
+
+
+.sale-col__info img {
+    width: 100%;
+}
+
+.sale-description {
+    margin-bottom: 40px;
+}
+
+.sale-description p {
+    margin-bottom: 20px;
+}
+
+.sale-navigation {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.sale-navigation a {
+    margin: 0 20px;
+}
+
+.sidebar-right {
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.deadlines-sale {
+    text-align: center;
+    border-bottom: 1px solid #E7E9E7;
+    padding: 60px 0;
+}
+
+.deadlines-sale img {
+    width: 32px;
+    margin-bottom: 15px;
+}
+
+.deadlines-sale p {
+    font-size: 16px;
+}
+
+.conditions-sale {
+    padding: 40px;
+}
+
+ul.conditions {
+    padding-left: 15px;
+}
+
+ul.conditions li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+
+.contacts-sidebar {
+    border-top: 1px solid #E7E9E7;
+    padding: 20px 40px 40px 40px;
+}
+
+.sidebar-right h3 {
+    font-size: 18px;
+    font-family: 'Montserrat';
+    color: #102209;
+    font-weight: 500;
+}
+
+.phone-sidebar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.phone-sidebar img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1632px) {
+
+    .sale-info {
+        padding-right: 10%;
+    }
+
+    .sale-info img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .sale-info {
+        width: 60%;
+        padding-right: 5%;
+    }
+
+    .conditions-sale {
+        padding: 30px;
+    }
+
+    .contacts-sidebar {
+        padding: 20px 30px 30px 30px;
+    }
+
+    .sidebar-right {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .sale-info {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .sale-navigation {
+        display: none;
+    }
+
+    .sidebar-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .conditions-sale {
+        padding: 40px;
+    }
+
+    .contacts-sidebar {
+        padding: 20px 40px 40px 40px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .sale-info h1 {
+        font-size: 26px;
+    }
+
+    .sale-description p {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .conditions-sale {
+        padding: 25px;
+    }
+
+    .contacts-sidebar {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .phone-sidebar {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,67 @@
+.container-page
+    ul.breadcrumbs
+        li
+            a(href="/") Главная /
+        li.active О компании
+    .page-content
+        h1 О компании
+        .about-row
+            .about-col
+                p С 2014 года наша компания производит продукцию под торговой маркой «Усадьба», наш слоган – «Мы работаем с теплом». В свою продукцию мы вкладываем все тепло своих рук, усердный труд и любовь к своему делу. В процессе производства мы постоянно совершенствуем свою продукцию, учитывая пожелания наших заказчиков.
+                p На данный момент наше производство позволяет изготовлять в год около 4000 теплиц. Мы начинали с одного вида теплиц, теперь вы можете выбрать, как минимум из 7 разных теплиц, которые различаются как по размерам, так и по жесткости каркаса, степени разборности, строению в целом.
+                .btn-about
+                    a.btn(href="/catalog.html") Перейти в каталог
+            .about-col__img
+                a(href="/static/images/general/ogrn.jpg" data-fancybox="about-image")
+                    img(src="/static/images/general/ogrn.jpg", alt="ОГРН Усадьба")
+        .alert-about
+            img(src="/static/images/general/logo.svg", alt="Усадьба")
+            p В настоящее время «РЭЗ СП» занимает ведущие позиции на ортопедическом рынке по объему выпуска высококачественных протезов. Это самый крупный специализированный завод в Российской Федерации и странах СНГ.
+        .content-about
+            h3 История компании
+            p С 2014 года наша компания производит продукцию под торговой маркой «Усадьба», наш слоган – «Мы работаем с теплом». В свою продукцию мы вкладываем все тепло своих рук, усердный труд и любовь к своему делу. В процессе производства мы постоянно совершенствуем свою продукцию, учитывая пожелания наших заказчиков.
+            p На данный момент наше производство позволяет изготовлять в год около 4000 теплиц. Мы начинали с одного вида теплиц, теперь вы можете выбрать, как минимум из 7 разных теплиц, которые различаются как по размерам, так и по жесткости каркаса, степени разборности, строению в целом.
+        section.faq
+            h2 Вопрос ответ
+            .faq-container
+                ul.faq-list
+                    li
+                        input(type="checkbox" checked)
+                        i
+                        h3 Доставка и оплата
+                        p This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.
+                    li
+                        input(type="checkbox" checked)
+                        i
+                        h3 Гарантии
+                        p This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.
+                    li
+                        input(type="checkbox" checked)
+                        i
+                        h3 Всё о ценах
+                        p This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.
+                .faq-callback
+                    .faq-callback__btn
+                        a.btn(href="#" data-fancybox data-src="#question") Задать вопрос
+                    .faq-callback__info
+                        p Вы можете задать любой вопрос<br>на тему нашей продукции или работы магазина.
+.popup#question
+    .popup__wrap.modal_window
+        button(class="popup__close" data-fancybox-close) Закрыть
+        .popup__content
+            p.form-title Задать вопрос
+            p.form-subtitle Заполните все поля и наш менеджер<br>свяжется с Вами в ближайшее время.
+            .form-order__container
+                form(class="form-popup" id="form-question")
+                    input(class="form-popup__input" type="text" name="name" placeholder="Имя")
+                    input(class="form-popup__input mask__input_phone" type="tel" name="phone" placeholder="Телефон*" required)
+                    textarea(class="form-popup__textarea" name="message" placeholder="Комментарий...")
+                    button(class="btn form-popup__submit") Отправить
+                    .politic-container
+                        label(class="switch" for="question-checkbox")
+                            input(type="checkbox" id="question-checkbox" checked required="")
+                            .slider-checkbox.round-checkbox
+                        span Заполняя форму Вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a>
+
+
+            
